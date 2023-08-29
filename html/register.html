@@ -1,0 +1,108 @@
+<!--
+	tlnet websocket test demo
+	im demo
+	https://github.com/donniew/tlnet
+	https://github.com/donniew/tlnetIm
+	donnie4w@gmail.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="bookmark" href="/favicon.ico">
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/app.css" rel="stylesheet">
+	<link href="/assets/css/icons.css" rel="stylesheet">
+	<script src="/assets/js/t.js"></script>
+	<title>register</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-xl-7 mx-auto">
+				<div class="card border-top border-0 border-4 border-dark">
+					<div class="card-body p-5">
+						<div class="card-title text-center"><i class="bx bxs-user-circle text-dark font-50"></i>
+							<h5 class="mb-5 mt-2 text-dark">用户注册</h5>
+						</div>
+						<hr>
+						<form class="row g-3" action="/register" method="post">
+							<div class="col-12">
+								<label for="inputLastEnterUsername" class="form-label">昵称</label>
+								<div class="input-group input-group-lg"> <span
+										class="input-group-text bg-transparent"><i class='bx bxs-user'></i></span>
+									<input type="text" class="form-control border-start-0" name="username"
+										placeholder="Enter nickname" />
+								</div>
+
+							</div>
+							
+							<div class="col-12">
+								<label for="inputLastEnterPassword" class="form-label">密码</label>
+								<div class="input-group input-group-lg"> <span
+										class="input-group-text bg-transparent"><i class='bx bxs-lock-open'></i></span>
+									<input type="password" class="form-control border-start-0" name="password"
+										placeholder="Enter Password" />
+								</div>
+							</div>
+
+							<div style="text-align:center;">
+								<label for="pwd" class="form-label">选择头像：</label>
+								<select name="logo" onchange="document.images['idface'].src=options[selectedIndex].value;"
+									class="form-select-sm">
+									<option value="/img/1.png" class="img-rounded">头像 1</option>
+									<option value="/img/2.png" class="img-rounded">头像 2</option>
+									<option value="/img/3.png" class="img-rounded">头像 3</option>
+									<option value="/img/4.png" class="img-rounded">头像 4</option>
+									<option value="/img/5.png" class="img-rounded">头像 5</option>
+									<option value="/img/6.png" class="img-rounded">头像 6</option>
+									<option value="/img/7.png" class="img-rounded">头像 7</option>
+									<option value="/img/8.png" class="img-rounded">头像 8</option>
+									<option value="/img/9.png" class="img-rounded">头像 9</option>
+									<option value="/img/10.png" class="img-rounded">头像 10</option>
+									<option value="/img/11.png" class="img-rounded">头像 11</option>
+									<option value="/img/12.png" class="img-rounded">头像 12</option>
+									<option value="/img/13.png" class="img-rounded">头像 13</option>
+									<option value="/img/14.png" class="img-rounded">头像 14</option>
+									<option value="/img/15.png" class="img-rounded">头像 15</option>
+									<option value="/img/16.png" class="img-rounded">头像 16</option>
+									<option value="/img/17.png" class="img-rounded">头像 17</option>
+									<option value="/img/18.png" class="img-rounded">头像 18</option>
+									<option value="/img/19.png" class="img-rounded">头像 19</option>
+									<option value="/img/20.png" class="img-rounded">头像 20</option>
+									<option value="/img/21.png" class="img-rounded">头像 21</option>
+									<option value="/img/22.png" class="img-rounded">头像 22</option>
+									<option value="/img/23.png" class="img-rounded">头像 23</option>
+									<option value="/img/24.png" class="img-rounded">头像 24</option>
+									<option value="/img/25.png" class="img-rounded">头像 25</option>
+									<option value="/img/26.png" class="img-rounded">头像 26</option>
+									<option value="/img/27.png" class="img-rounded">头像 27</option>
+									<option value="/img/28.png" class="img-rounded">头像 28</option>
+									<option value="/img/29.png" class="img-rounded">头像 29</option>
+									<option value="/img/30.png" class="img-rounded">头像 30</option>
+								</select>
+								<br>
+								<div style=text-align:center;"><img src="/img/1.png" style="height: 100px;" id=idface></div>
+							</div>
+					</div>
+					<div class="col-12">
+						<div class="d-grid">
+							<button type="submit" class="btn btn-dark btn-lg px-5">
+								<i class='bx bxs-lock-open'></i>Register</button>
+						</div>
+					</div>
+					<hr />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
